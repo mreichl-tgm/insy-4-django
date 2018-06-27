@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+</head>
+
+<body>
+    {% if laender %}
+        <ul>
+        {% for land in laender %}
+            <li>{{ land }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>Keine Länder verfügbar</p>
+    {% endif %}
+</body>
+</html>
